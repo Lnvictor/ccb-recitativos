@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="container-nav">
+        <div class="simple-btn"  *ngIf="!this.openSideBar">
+            <button [ngClass]="'btn btn-primary'" type="button" mat-button (click)="this.tooggleSideBar()">
+              Toggle sidenav
+            </button>
+        </div>
+        
+        <mat-drawer-container class="sidenav" *ngIf="this.openSideBar">
+            <mat-drawer #drawer class="sidenav-drawer" mode="push" opened>
+                <button [ngClass]="'btn btn-primary'" type="button" mat-button (click)="this.tooggleSideBar()">
+                    Toggle sidenav
+                  </button>
+              <p>Auto-resizing sidenav</p>
+              <br>
+              <p>Auto-resizing sidenav</p>
+              <br><p>Auto-resizing sidenav</p>
+              <br><p>Auto-resizing sidenav</p>
+              <br><p>Auto-resizing sidenav</p>
+              <br><p>Auto-resizing sidenav</p>
+              <br><p>Auto-resizing sidenav</p>
+              <br><p>Auto-resizing sidenav</p>
+              <br><p>Auto-resizing sidenav</p>
+              <br><p>Auto-resizing sidenav</p>
+              <br><p>Auto-resizing sidenav</p>
+              <br><p>Auto-resizing sidenav</p>
+              <br><p>Auto-resizing sidenav</p>
+            </mat-drawer>
+          </mat-drawer-container>
+    </div>
+
+    <div class="main-container">
+
+    </div>
+</div>
